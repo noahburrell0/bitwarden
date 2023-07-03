@@ -4,8 +4,8 @@ set -e
 
 bw config server ${BW_HOST}
 
-export BW_SESSION=$(bw login --apikey)
-
+bw login --apikey
+export $BW_SESSION=$(bw unlock ${BW_PASSWORD} --raw)
 bw unlock --check
 
 echo 'Running `bw server` on port 8087'
