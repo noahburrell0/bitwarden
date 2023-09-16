@@ -1,6 +1,6 @@
 FROM debian:sid
 
-ENV BW_CLI_VERSION=2023.1.0
+ENV BW_CLI_VERSION=2023.8.4
 
 RUN apt update && \
     apt install -y wget unzip && \
